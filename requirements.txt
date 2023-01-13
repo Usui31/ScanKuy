@@ -1,0 +1,6 @@
+fastapi
+pytesseract
+Jinja2
+python-multipart
+deta
+BaseModel

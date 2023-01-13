@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ScanKuy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+
+    <!-- favicon -->
+    <link rel="icon" href="{{ url_for('static', path='/images/scankuy.ico') }}">
+
+    <!-- cdn jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="page-header">
+        <div class="brand">
+            <h1>SCANKUY</h1>
+            <p>Pilihan Anda Dalam Scanning Text</p>
+        </div>
+
+        <!-- navigasi -->
+        <nav class="header__nav">
+            <ul>
+                <li><a href="./">HOME</a></li>
+                <li><a href="./about_us">ABOUT US</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- tampilan main content -->
+
+    <main class="text-converter">
+
+        <!-- form input file -->
+        <div class="text-converter--form">
+            <label for="file-input" class="file-input--label">Convert Text from Image and Optionally Detect
+                Annotations</label>
+
+            <!-- input file -->
+            <input type="file" id="image_file" class="file-input" accept="image/*">
+
+            <!-- button submit -->
+            <button class="submit-button" id="submit"> SUBMIT </button>
+        </div>
+        <h1 class="converted-text--title">CONVERTED TEXT</h1>
+        <!-- <p class="converted-text--notification">
+            <span class="converted-text--notification__messages">Processed Successfully atau failed bebas</span><span
+                class="close-button">X</span>
+        </p> -->
+
+        <!-- container -->
+        <div class="converted-text--container">
+
+            <!-- textarea -->
+            <textarea class="converted-text--container__result" id="result" cols="30" rows="20"></textarea>
+
+            <!-- copy icon -->
+            <img src="{{ url_for('static', path='/images/clipboard.svg') }}" alt="copy_to_clipboard"
+                class="converted-text--container__svg">
+
+            <!-- text count dibawah textarea -->
+            <div id="the-count">
+                <span id="current">0</span>
+                <span id="maximum">/ &infin;</span>
+                <span id>Character</span>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="page-footer">
+        <h1>TEXT SCANNER</h1>
+        <p>Stay productive. Digitize your knowledge with the best OCR engine</p>
+    </footer>
+
+    <!-- script javascript -->
+    <script src="{{ url_for('static', path='/script.js') }}"></script>
+    <script src='https://unpkg.com/tesseract.js@4.0.1/dist/tesseract.min.js'></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>

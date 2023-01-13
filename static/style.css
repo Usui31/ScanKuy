@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Roboto&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    row-gap: 2.5rem;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header__nav > ul {
+    margin-top: 1rem;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding:0;
+}
+
+.header__nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+.header__nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+.page-header {
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.page-footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+
+.page-footer > h1 {
+    font-size: 1.5rem;
+}
+
+.brand {
+    position: absolute;
+    font-family: 'Charm', cursive;
+    font-weight: 700;
+    top: 0;
+    right: 0;
+    background-color: dodgerblue;
+    color: white;
+    width: max(12rem,19vw);
+    height: 11rem;
+    border-radius: 0 0 0 100% / 0 0 0 100%;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+
+.brand > h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.brand > p {
+    margin-top: 0;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+}
+
+.brand > * {
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.text-converter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.text-converter--form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.file-input--label {
+    background-color: lightgray;
+    padding:0.4rem;
+}
+
+.file-input {
+    padding: 3px;
+    outline: black solid 1px;
+}
+
+.submit-button {
+    border: 0;
+    width: 5rem;
+    height: 2rem;
+    color: white;
+    background-color: dodgerblue;
+}
+
+.submit-button:hover{
+    color:dodgerblue;
+    background-color: white;
+    box-shadow: 0 0 2px 2px dodgerblue;
+}
+
+.converted-text--title {
+    text-align: center;
+    margin: 0.9rem 0 0;
+}
+
+.converted-text--notification {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    text-align: left;
+    margin:0;
+    width: 30vw;
+    max-width: 25rem;
+}
+
+.converted-text--notification__messages{
+    flex-grow: 1;
+}
+
+.close-button{
+    width:1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.close-button:hover{
+    background-color: gray;
+    border-radius: 40%;
+}
+
+.converted-text--container{
+    position: relative;
+    width: 80vw;
+    height: 17rem;
+}
+
+.converted-text--container__result{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    resize: none;
+    font-size: 1.2rem;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.converted-text--container__svg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.converted-text--container__svg:hover{
+    background-color: gray;
+    border-radius: 40%;
+}
+
+.about-us{
+    color:#302dac;
+}
+
+.about-us * {
+    margin : 0;
+}
+
+.about-us__article {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us__article__title {
+    font-size: 4rem;
+}
+
+.about-us__article__image {
+    width: 20rem;
+    height: 20rem;
+}
+.about-us__article__content {
+    width: 45vw;
+    padding: 1rem;
+    border: 1px solid black;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 800px){
+    .brand {
+        display: block;
+        position: relative;
+        margin-left: auto;
+    }
+}
+

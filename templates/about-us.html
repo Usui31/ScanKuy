@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ScanKuy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+        <link rel="icon" href="{{ url_for('static', path='/images/scankuy.ico') }}">
+    </head>
+
+    <body>
+        <header class="page-header">
+            <div class="brand">
+                <h1>SCANKUY</h1>
+                <p>Pilihan anda dalam scanning text</p>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="./">HOME</a></li>
+                    <li><a href="./about_us">ABOUT US</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <main class="about-us">
+            <article class="about-us__article">
+                <h1 class="about-us__article__title">ABOUT US</h1>
+                <section class="about-us__article__content">
+                    <img class="about-us__article__image" src="{{ url_for('static', path='/images/scankuy.png') }}" alt="">
+                    <p>
+                        SCANKUY ADALAH PERANGKAT LUNAK BERBASIS WEB GRATIS YANG MEMUNGKINKAN ANDA MENGONVERSI IMAGE(JPG/PNG) YANG DIPINDAI DENGAN KAMERA DIGITAL MENJADI DOKUMEN ELEKTRONIK TEXT YANG DAPAT DIEDIT 
+                    </p>
+                </section>
+            </article>
+        </main>
+        <footer class="page-footer">
+            <h1>TEXT SCANNER</h1>
+            <p>Stay productive. Digitize your knowledge with the best OCR engine</p>
+        </footer>
+    </body>
+</html>
